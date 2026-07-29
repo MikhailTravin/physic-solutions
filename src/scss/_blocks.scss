@@ -1,0 +1,86 @@
+.breadcrumbs {
+    position: relative;
+    z-index: 52;
+    padding: 0px 0px 15px 0px;
+    @media (max-width: 992px) {
+        z-index: 10;
+    }
+    ul {
+        display: flex;
+        justify-content: start;
+        flex-wrap: wrap;
+        align-items: center;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 186%;
+        color: var(--326045);
+        gap: 10px;
+        @media (max-width: 992px) {
+            flex-wrap: nowrap;
+            margin: 0px -20px;
+            padding: 0px 20px;
+            width: calc(100% + 40px);
+            overflow-x: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+        }
+        li {
+            &:first-child {
+                a,
+                span {
+                    &::before {
+                        content: "";
+                        display: none;
+                    }
+                }
+            }
+            @media (max-width: 992px) {
+                white-space: nowrap;
+                flex: 0 0 auto;
+            }
+        }
+        a,
+        span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s;
+            &:hover {
+                color: var(--326045);
+                &.home {
+                    background: var(--326045);
+                }
+            }
+            &.home {
+                width: 20px;
+                height: 20px;
+                flex: 0 0 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 4px;
+                transition: background-color 0.3s;
+                background-color: var(--76a16b);
+                box-shadow: -10px 20px 40px 0 rgba(17, 24, 37, 0.1);
+            }
+            svg {
+                fill: var(--ffffff);
+            }
+            &::before {
+                content: "-";
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 186%;
+                color: var(--326045);
+            }
+        }
+        span {
+            pointer-events: none;
+        }
+    }
+}
+
+//========================================================================================================================================================

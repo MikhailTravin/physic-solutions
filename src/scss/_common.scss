@@ -1,0 +1,160 @@
+body {
+  color: var(--201f22);
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 120%;
+  padding: 0px 0px 0px 0px !important;
+  &.hide-scrollbar {
+    margin: 0px 0px 0px 0px !important;
+  }
+  .lock & {
+    overflow: hidden;
+  }
+  .popup-show & {
+    overflow: hidden;
+  }
+  .menu-open &,
+  .catalog-open & {
+    overflow: hidden;
+  }
+}
+
+body.noscroll {
+  overflow: hidden;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+fieldset,
+fieldset legend {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  outline: none;
+  color: currentcolor;
+}
+
+.btn {
+  width: fit-content;
+  border-radius: 10px;
+  background:
+    linear-gradient(180deg, #ad419e 0%, #6530a6 50.48%, #6d2fa1 100%),
+    linear-gradient(
+      64.87deg,
+      rgba(255, 255, 255, 0) -3.12%,
+      rgba(255, 255, 255, 0) 21.35%,
+      rgba(255, 255, 255, 0.15) 46.79%,
+      rgba(255, 255, 255, 0) 72.23%,
+      rgba(255, 255, 255, 0) 96.71%
+    );
+  min-height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 91%;
+  color: var(--ffffff);
+  text-align: center;
+  gap: 15px;
+  padding: 10px 30px;
+  transition: opacity 0.3s;
+  svg {
+    fill: var(--ffffff);
+    margin-top: 2px;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+  span,
+  a,
+  svg {
+    position: relative;
+    z-index: 10;
+  }
+  &.btn-border {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 111%;
+    color: var(--201f22);
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    transition: color 0.3s;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: calc(100% - 4px);
+      height: calc(100% - 4px);
+      background: var(--ffffff);
+      border-radius: 3px;
+      transition: opacity 0.3s;
+    }
+    @media (any-hover: hover) {
+      &:hover {
+        opacity: 1;
+        color: var(--ffffff);
+        &::before {
+          content: "";
+          opacity: 0;
+        }
+        .btn-line {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+.btn-line {
+  position: absolute;
+  background: var(--ffffff);
+  width: 2px;
+  z-index: 2;
+  height: 10px;
+  transition: opacity 0.3s;
+}
+.btn-line1 {
+  left: 0;
+  top: 15px;
+}
+.btn-line2 {
+  left: 0;
+  bottom: 15px;
+}
+.btn-line3 {
+  right: 0;
+  top: 15px;
+}
+.btn-line4 {
+  right: 0;
+  bottom: 15px;
+}
+
+.bg1 {
+  position: absolute;
+  height: 100%;
+  left: 20px;
+  width: calc(100% - 20px);
+  top: 5px;
+  border-radius: 10px;
+  background: var(--ffffff);
+  box-shadow: 0 20px 50px 0 rgba(45, 68, 76, 0.1);
+}
