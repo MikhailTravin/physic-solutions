@@ -15,7 +15,8 @@ body {
     overflow: hidden;
   }
   .menu-open &,
-  .catalog-open & {
+  .catalog-open &,
+  .filter-open & {
     overflow: hidden;
   }
 }
@@ -203,6 +204,83 @@ a {
   }
   @media (max-width: 1330px) {
     display: none;
+  }
+}
+.bg3 {
+  position: absolute;
+  top: 0;
+  height: 50%;
+  left: 10px;
+  width: calc(100% - 20px);
+
+  span {
+    position: absolute;
+    top: 29px;
+    width: 100%;
+    height: 50%;
+    background: var(--ffffff);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background: var(--ffffff);
+    height: 50%;
+    width: calc(50% - 50px);
+    border-radius: 5px 0px 0px 5px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background: var(--ffffff);
+    right: 0;
+    height: 50%;
+    width: calc(50% - 50px);
+    border-radius: 0px 5px 5px 0px;
+  }
+  img {
+    width: 100px;
+    height: 29px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
+.bg4 {
+  position: absolute;
+  top: 5px;
+  height: calc(100% - 10px);
+  left: 0;
+  width: 100%;
+  span {
+    position: absolute;
+    top: 33px;
+    width: 100%;
+    height: 100%;
+    background: var(--6e30a2);
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background: var(--6e30a2);
+    height: 100%;
+    width: calc(50% - 50px);
+    border-radius: 10px 0px 10px 10px;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background: var(--6e30a2);
+    right: 0;
+    height: 100%;
+    width: calc(50% - 50px);
+    border-radius: 0px 10px 10px 10px;
+  }
+  img {
+    width: 105px;
+    height: 33px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 }
 
