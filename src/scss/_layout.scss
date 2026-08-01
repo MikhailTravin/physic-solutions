@@ -40,16 +40,6 @@
 .main {
   flex-grow: 1;
   flex-shrink: 1;
-  margin: 120px 0px 0px 0px;
-  @media (max-width: 1336px) {
-    margin: 130px 0px 0px 0px;
-  }
-  @media (max-width: 768px) {
-    margin: 115px 0px 0px 0px;
-  }
-  @media (max-width: 359px) {
-    margin: 105px 0px 0px 0px;
-  }
 }
 
 .container {

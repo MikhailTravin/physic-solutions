@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Каталог</title>
+    {% include 'blocks/head.njk' %}
+</head>
+
+<body class="preload mp">
+    <div class="main-wrapper-outer">
+        {% include 'blocks/header.njk' %}
+        <main class="main">
+
+            <div class="block-main">
+                <div class="container">
+                    <div class="breadcrumbs">
+                        <ul>
+                            <li>
+                                <a href="#" class="home">
+                                    <svg aria-hidden="true" width="12" height="11">
+                                        <use xlink:href="img/sprite.svg#home"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li><span>Каталог оборудования</span></li>
+                        </ul>
+                    </div>
+                    <div class="block-main__titles">
+                        <h1 class="title1 mini">Каталог оборудования</h1>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-catalog">
+                <div class="container">
+                    <div class="block-catalog__content">
+                        <div class="block-catalog-filter">
+                            <div class="block-catalog-filter__body">
+                                <div class="block-catalog-filter__button">
+                                    <div class="block-catalog-filter__title">
+                                        Фильтр
+                                    </div>
+                                </div>
+                                <div class="block-catalog-filter__top">
+                                    <span>Фильтр</span>
+                                    <div class="block-catalog-filter__close">
+                                        <svg aria-hidden="true" width="12" height="12">
+                                            <use xlink:href="img/sprite.svg#close"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="block-catalog__body">
+                            <div class="block-catalog__top">
+                                <div class="block-catalog-sorting">
+                                    <div class="block-catalog-sorting__title">
+                                        Сортировать по:
+                                    </div>
+                                    <div class="block-catalog-sorting__body">
+                                        <select name="form[]" class="select">
+                                            <option value="" data-show data-label data-label="Цене" selected>
+                                                Цене
+                                            </option>
+                                            <option value="1">Меньше</option>
+                                            <option value="2">Больше</option>
+                                        </select>
+                                        <select name="form[]" class="select">
+                                            <option value="" data-show data-label data-label="Популярности" selected>
+                                                Популярности
+                                            </option>
+                                            <option value="1">Меньше</option>
+                                            <option value="2">Больше</option>
+                                        </select>
+                                        <select name="form[]" class="select">
+                                            <option value="" data-show data-label data-label="Наименованию" selected>
+                                                Наименованию
+                                            </option>
+                                            <option value="1">Меньше</option>
+                                            <option value="2">Больше</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="block-catalog__cards">
+                                    <a href="./" data-popup="#call" class="card-product">
+                                        <div class="card-product__items">
+                                            <div class="card-product__image">
+                                                <img src="img/products/image1.webp" alt="">
+                                            </div>
+                                            <div class="card-product__item">
+                                                <div class="card-product__titles">
+                                                    <div class="card-product__title">
+                                                        Корпус клапана 3.44"
+                                                    </div>
+                                                    <p>
+                                                        Shroud, 3.44 - Extended 11147
+                                                    </p>
+                                                </div>
+                                                <div class="btn btn-border btn-large">
+                                                    <div class="btn-line btn-line1"></div>
+                                                    <div class="btn-line btn-line2"></div>
+                                                    <div class="btn-line btn-line3"></div>
+                                                    <div class="btn-line btn-line4"></div>
+                                                    <span>Узнать цену</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="./" data-popup="#call" class="card-product">
+                                        <div class="card-product__items">
+                                            <div class="card-product__image">
+                                                <img src="img/products/image2.webp" alt="">
+                                            </div>
+                                            <div class="card-product__item">
+                                                <div class="card-product__titles">
+                                                    <div class="card-product__title">
+                                                        Статор 3.44" (пониженный расход)
+                                                    </div>
+                                                    <p>
+                                                        Inlet Plate, Fixed Pulser (3.44 - Std) 11954
+                                                    </p>
+                                                </div>
+                                                <div class="btn btn-border btn-large">
+                                                    <div class="btn-line btn-line1"></div>
+                                                    <div class="btn-line btn-line2"></div>
+                                                    <div class="btn-line btn-line3"></div>
+                                                    <div class="btn-line btn-line4"></div>
+                                                    <span>Узнать цену</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="./" data-popup="#call" class="card-product">
+                                        <div class="card-product__items">
+                                            <div class="card-product__image">
+                                                <img src="img/products/image3.webp" alt="">
+                                            </div>
+                                            <div class="card-product__item">
+                                                <div class="card-product__titles">
+                                                    <div class="card-product__title">
+                                                        Ротор 2.72" (пониженный расход)
+                                                    </div>
+                                                    <p>
+                                                        Rotor, 2.72Dia, Fixed Pulser (3.44 - Std)
+                                                        60323-272
+                                                    </p>
+                                                </div>
+                                                <div class="btn btn-border btn-large">
+                                                    <div class="btn-line btn-line1"></div>
+                                                    <div class="btn-line btn-line2"></div>
+                                                    <div class="btn-line btn-line3"></div>
+                                                    <div class="btn-line btn-line4"></div>
+                                                    <span>Узнать цену</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="./" data-popup="#call" class="card-product">
+                                        <div class="card-product__items">
+                                            <div class="card-product__image">
+                                                <img src="img/products/image3.webp" alt="">
+                                            </div>
+                                            <div class="card-product__item">
+                                                <div class="card-product__titles">
+                                                    <div class="card-product__title">
+                                                        Ротор 2.72" (пониженный расход)
+                                                    </div>
+                                                    <p>
+                                                        Rotor, 2.72Dia, Fixed Pulser (3.44 - Std)
+                                                        60323-272
+                                                    </p>
+                                                </div>
+                                                <div class="btn btn-border btn-large">
+                                                    <div class="btn-line btn-line1"></div>
+                                                    <div class="btn-line btn-line2"></div>
+                                                    <div class="btn-line btn-line3"></div>
+                                                    <div class="btn-line btn-line4"></div>
+                                                    <span>Узнать цену</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="./" data-popup="#call" class="card-product">
+                                        <div class="card-product__items">
+                                            <div class="card-product__image">
+                                                <img src="img/products/image1.webp" alt="">
+                                            </div>
+                                            <div class="card-product__item">
+                                                <div class="card-product__titles">
+                                                    <div class="card-product__title">
+                                                        Корпус клапана 3.44"
+                                                    </div>
+                                                    <p>
+                                                        Shroud, 3.44 - Extended 11147
+                                                    </p>
+                                                </div>
+                                                <div class="btn btn-border btn-large">
+                                                    <div class="btn-line btn-line1"></div>
+                                                    <div class="btn-line btn-line2"></div>
+                                                    <div class="btn-line btn-line3"></div>
+                                                    <div class="btn-line btn-line4"></div>
+                                                    <span>Узнать цену</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="./" data-popup="#call" class="card-product">
+                                        <div class="card-product__items">
+                                            <div class="card-product__image">
+                                                <img src="img/products/image2.webp" alt="">
+                                            </div>
+                                            <div class="card-product__item">
+                                                <div class="card-product__titles">
+                                                    <div class="card-product__title">
+                                                        Статор 3.44" (пониженный расход)
+                                                    </div>
+                                                    <p>
+                                                        Inlet Plate, Fixed Pulser (3.44 - Std) 11954
+                                                    </p>
+                                                </div>
+                                                <div class="btn btn-border btn-large">
+                                                    <div class="btn-line btn-line1"></div>
+                                                    <div class="btn-line btn-line2"></div>
+                                                    <div class="btn-line btn-line3"></div>
+                                                    <div class="btn-line btn-line4"></div>
+                                                    <span>Узнать цену</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="./" data-popup="#call" class="card-product">
+                                        <div class="card-product__items">
+                                            <div class="card-product__image">
+                                                <img src="img/products/image1.webp" alt="">
+                                            </div>
+                                            <div class="card-product__item">
+                                                <div class="card-product__titles">
+                                                    <div class="card-product__title">
+                                                        Корпус клапана 3.44"
+                                                    </div>
+                                                    <p>
+                                                        Shroud, 3.44 - Extended 11147
+                                                    </p>
+                                                </div>
+                                                <div class="btn btn-border btn-large">
+                                                    <div class="btn-line btn-line1"></div>
+                                                    <div class="btn-line btn-line2"></div>
+                                                    <div class="btn-line btn-line3"></div>
+                                                    <div class="btn-line btn-line4"></div>
+                                                    <span>Узнать цену</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="./" data-popup="#call" class="card-product">
+                                        <div class="card-product__items">
+                                            <div class="card-product__image">
+                                                <img src="img/products/image2.webp" alt="">
+                                            </div>
+                                            <div class="card-product__item">
+                                                <div class="card-product__titles">
+                                                    <div class="card-product__title">
+                                                        Статор 3.44" (пониженный расход)
+                                                    </div>
+                                                    <p>
+                                                        Inlet Plate, Fixed Pulser (3.44 - Std) 11954
+                                                    </p>
+                                                </div>
+                                                <div class="btn btn-border btn-large">
+                                                    <div class="btn-line btn-line1"></div>
+                                                    <div class="btn-line btn-line2"></div>
+                                                    <div class="btn-line btn-line3"></div>
+                                                    <div class="btn-line btn-line4"></div>
+                                                    <span>Узнать цену</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="./" data-popup="#call" class="card-product">
+                                        <div class="card-product__items">
+                                            <div class="card-product__image">
+                                                <img src="img/products/image3.webp" alt="">
+                                            </div>
+                                            <div class="card-product__item">
+                                                <div class="card-product__titles">
+                                                    <div class="card-product__title">
+                                                        Ротор 2.72" (пониженный расход)
+                                                    </div>
+                                                    <p>
+                                                        Rotor, 2.72Dia, Fixed Pulser (3.44 - Std)
+                                                        60323-272
+                                                    </p>
+                                                </div>
+                                                <div class="btn btn-border btn-large">
+                                                    <div class="btn-line btn-line1"></div>
+                                                    <div class="btn-line btn-line2"></div>
+                                                    <div class="btn-line btn-line3"></div>
+                                                    <div class="btn-line btn-line4"></div>
+                                                    <span>Узнать цену</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            {% include 'blocks/pagging.njk' %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-clients">
+                <div class="container">
+                    <h2 class="title2">Наши клиенты</h2>
+                    <div class="block-clients__slider swiper">
+                        <div class="block-clients__wrapper swiper-wrapper">
+                            <div class="block-clients__slide swiper-slide">
+                                <img loading="lazy" src="img/clients/image1.webp" alt="">
+                            </div>
+                            <div class="block-clients__slide swiper-slide">
+                                <img loading="lazy" src="img/clients/image2.webp" alt="">
+                            </div>
+                            <div class="block-clients__slide swiper-slide">
+                                <img loading="lazy" src="img/clients/image3.webp" alt="">
+                            </div>
+                            <div class="block-clients__slide swiper-slide">
+                                <img loading="lazy" src="img/clients/image4.webp" alt="">
+                            </div>
+                            <div class="block-clients__slide swiper-slide">
+                                <img loading="lazy" src="img/clients/image6.webp" alt="">
+                            </div>
+                            <div class="block-clients__slide swiper-slide">
+                                <img loading="lazy" src="img/clients/image5.webp" alt="">
+                            </div>
+                            <div class="block-clients__slide swiper-slide">
+                                <img loading="lazy" src="img/clients/image7.webp" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block-banner">
+                <img loading="lazy" src="img/bg5.webp" alt="" class="block-banner__bg1 desc">
+                <img loading="lazy" src="img/bg5-mob.webp" alt="" class="block-banner__bg1 mob">
+                <div class="bg1"></div>
+                <div class="container">
+                    <div class="block-banner__content">
+                        <div class="block-banner__top">
+                            <h2 class="title2">
+                                Остались вопросы?
+                            </h2>
+                            <p>
+                                <span>—</span> Напишите нам
+                            </p>
+                        </div>
+                        <a href="./" class="btn btn-white">
+                            <span>Задать вопрос</span>
+                            <img loading="lazy" src="img/icons/arrow3.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            {% include 'blocks/cookie.njk' %}
+
+        </main>
+        {% include 'blocks/footer.njk' %}
+    </div>
+    {% include 'blocks/popups.njk' %}
+    {% include 'blocks/scripts.njk' %}
+</body>
+
+</html>

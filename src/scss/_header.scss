@@ -245,6 +245,7 @@
     flex: 1 1 auto;
     padding: 20px 40px 20px 30px;
     @media (max-width: 1330px) {
+        background: transparent;
         position: static;
         padding: 0px 0px 0px 0px;
         justify-content: flex-end;
@@ -324,14 +325,6 @@
         .icon-menu {
             width: 16px;
             height: 13.5px;
-            span,
-            &::before,
-            &::after {
-                content: "";
-                transition:
-                    background-color 0.3s ease 0s,
-                    width 0.3s;
-            }
             &::before {
                 content: "";
                 left: 0;
@@ -349,6 +342,10 @@
                     &::before,
                     span {
                         background-color: var(--ffffff);
+                    }
+                    &::after {
+                        content: "";
+                        width: 100%;
                     }
                 }
             }
@@ -711,7 +708,7 @@
     &::before,
     &::after {
         content: "";
-        transition: all 0.3s ease 0s;
+        transition: all 0.5s ease 0s;
         right: 0;
         position: absolute;
         width: 100%;
